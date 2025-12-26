@@ -1,19 +1,36 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# PantryPal 🍳
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+**PantryPal** is an intelligent recipe assistant that helps you cook with what you have. Simply enter the ingredients in your pantry, and our AI chef (powered by **DeepSeek V3**) will generate a custom recipe just for you.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features ✨
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+*   **AI-Powered Recipes**: Generates creative and delicious recipes based on your available ingredients.
+*   **Smart Ingredient Management**: Easy-to-use list to track what you have on hand.
+*   **Fast & Cost-Effective**: Uses the OpenRouter API with the DeepSeek V3 model for high performance at a low cost.
+*   **Modern UI**: Built with React and tailored for a clean user experience.
 
-Happy Coding!
+## Tech Stack 🛠️
+
+*   **React 19**
+*   **Vite**
+*   **OpenAI SDK** (configured for OpenRouter)
+*   **DeepSeek V3 Model**
+
+## Getting Started 🚀
+
+1.  **Clone the repository**
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Set up your API Key**:
+    *   Create a `.env` file in the root directory.
+    *   Add your OpenRouter key: `VITE_OPENROUTER_API_KEY=your_key_here`
+4.  **Run the app**:
+    ```bash
+    npm run dev
+    ```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

@@ -1,10 +1,13 @@
+import { forwardRef } from "react"
 import ReactMarkdown from "react-markdown"
 
-export default function ClaudeRecipe(props) {
+const ClaudeRecipe = forwardRef((props, ref) => {
     return (
-        <section className="suggested-recipe-container" aria-live="polite">
+        <section className="suggested-recipe-container" aria-live="polite" ref={ref}>
             <h2>Chef Claude Recommends:</h2>
             <ReactMarkdown>{props.recipe}</ReactMarkdown>
         </section>
     )
-}
+})
+
+export default ClaudeRecipe
